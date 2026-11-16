@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #eef3fb;
+  --panel: #ffffff;
+  --panel-subtle: #f7f9fd;
+  --ink: #172747;
+  --muted: #5e6d87;
+  --primary: #1769e8;
+  --primary-hover: #1258c7;
+  --primary-soft: #e9f1ff;
+  --primary-soft-ink: #1457bd;
+  --nav: #10254b;
+  --nav-active: #1d60c7;
+  --line: #dce5f3;
+  --input-bg: #ffffff;
+  --input-border: #ccd7e8;
+}
+
+.dark {
+  --bg: #0b1424;
+  --panel: #142238;
+  --panel-subtle: #1b2d47;
+  --ink: #e9f1ff;
+  --muted: #9eb0cb;
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --primary-soft: #1e3a5f;
+  --primary-soft-ink: #93c5fd;
+  --nav: #091324;
+  --nav-active: #2563eb;
+  --line: #293d59;
+  --input-bg: #0f1d31;
+  --input-border: #344b6b;
+}
+
+.theme-sakura {
+  --primary: #d84d91;
+  --primary-hover: #be3879;
+  --primary-soft: #fce8f2;
+  --primary-soft-ink: #9e225f;
+  --nav: #522844;
+  --nav-active: #b93a78;
+}
+
+.theme-green {
+  --primary: #16865b;
+  --primary-hover: #116c49;
+  --primary-soft: #e4f6ee;
+  --primary-soft-ink: #0f6845;
+  --nav: #123e36;
+  --nav-active: #178059;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.font-mono-num {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

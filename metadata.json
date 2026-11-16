@@ -1,0 +1,6 @@
+{
+  "name": "CNTT1 - 9+K7 | Quản lý lớp",
+  "description": "Hệ thống quản lý lớp học CNTT1 - 9+K7 (Trường Cao đẳng Kiên Giang) hỗ trợ phân quyền Sinh viên, Giáo viên, Ban cán sự lớp và Quản lý.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
